@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:spg="http://www.huawei.com/SPG">
+    <soapenv:Header>
+        <spg:ResendFlag>?</spg:ResendFlag>
+        <spg:Authentication>
+            <spg:Username>sltprovision</spg:Username>
+            <spg:Password>SoftX3000@</spg:Password>
+        </spg:Authentication>
+        <spg:MessageID>?</spg:MessageID>
+    </soapenv:Header>
+    <soapenv:Body>
+        <spg:RMV_MSR>
+            <spg:IMPU>tel:+94{tpno}</spg:IMPU>
+            <spg:PATH></spg:PATH>
+        </spg:RMV_MSR>
+    </soapenv:Body>
+</soapenv:Envelope>

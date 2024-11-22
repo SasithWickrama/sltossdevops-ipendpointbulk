@@ -1,0 +1,25 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://ispp.com.cn/ispp_npi/">
+    <SOAP-ENV:Header>
+        <ns1:Username>provhss</ns1:Username>
+        <ns1:Password>ProvSlt_2020</ns1:Password>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns1:root>
+            <msg_head>
+                <time>{DT}</time>
+                <msg_type>Call</msg_type>
+                <serial>{SERIAL}</serial>
+            </msg_head>
+            <interface_msg>
+                <directive>
+                    <ENUMClass Name="ENUMNAPTRProfile">
+                        <ENUMMethod Name="DeleteMO">
+                            <E164NUM>94{tpno}</E164NUM>
+                            <ZONENAME>sltims.lk</ZONENAME>
+                        </ENUMMethod>
+                    </ENUMClass>
+                </directive>
+            </interface_msg>
+        </ns1:root>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
